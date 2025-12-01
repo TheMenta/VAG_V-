@@ -1,0 +1,79 @@
+.navbar {
+  width: 100%;
+  background: #0b0b0b;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  color: #4da6ff;
+}
+
+.login-btn {
+  padding: 7px 14px;
+  background: #4da6ff;
+  border-radius: 6px;
+}
+
+.login-btn:hover {
+  background: #1b78d8;
+}
+
+/* menu telora */
+.nav-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: -100%;
+    width: 200px;
+    background: #111;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    transition: right 0.3s ease;
+    border-left: 2px solid #222;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+}
