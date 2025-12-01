@@ -10,7 +10,7 @@ export default function Hero() {
         <h1>VAG</h1>
         <p>Csak a Skoda</p>
 
-        {/* Kereső a szöveg alatt */}
+      
         <div className="hero-search">
           <input type="text" placeholder="Keresés..." />
           <button>Keresés</button>
