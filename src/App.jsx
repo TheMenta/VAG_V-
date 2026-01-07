@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import Forum from "./pages/forum";
 import Auth from "./pages/Auth";
 import Premium from "./pages/premium";
+import ForumVW from "./pages/forumvw";
+import ForumSkoda from "./pages/forumskoda";
+import ForumSeat from "./pages/forumseat";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/forum/vw" element={<ForumVW />} />
+        <Route path="/forum/skoda" element={<ForumSkoda />} />
+        <Route path="/forum/seat" element={<ForumSeat />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/premium" element={<Premium />} />
       </Routes>
